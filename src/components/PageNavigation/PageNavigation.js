@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './PageNavigation.css'
 import Profile from '../Profile/Profile';
-import BusinessInfo from '../BusinessInfo/BusinessInfo';
 
 const PageNavigation = () => {
 
@@ -29,7 +28,7 @@ const PageNavigation = () => {
 
 
     const [step, setStep] = useState(1)
-    const [pageName, setPageName] = useState(['Your Profile', 'Business Information', 'Additional Users'])
+    const [pageName] = useState(['Your Profile', 'Business Information', 'Additional Users'])
     const totalPages = 3
 
     const handleBack = () => {
@@ -108,8 +107,7 @@ const PageNavigation = () => {
 
     useEffect(() => {
         handleInfoChange({ userInfo: pageName[step - 1] });
-        console.log(pageName[step - 1], step)
-    }, [step])
+    }, [step,pageName])
 
 
     return (

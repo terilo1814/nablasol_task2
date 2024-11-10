@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Profile.css'
 import ProfileInfo from '../ProfileInfo/ProfileInfo';
 import BusinessInfo from '../BusinessInfo/BusinessInfo';
