@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.user-settings {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDEFFC
+}
+
+.user-setting {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    color: gray;
+    cursor: pointer;
+}
+
+.tab-1.active {
+    background: linear-gradient(90deg, rgb(173, 210, 221), #66a9e4);
+    color: white;
+}
+
+.tab-2.active {
+    background: linear-gradient(90deg, #66a9e4, #3692e4);
+    color: white;
+}
+
+.tab-3.active {
+    background: linear-gradient(90deg, #3692e4, #0e64af);
+    color: white;
+}
+
+.index-design {
+    display: inline-block;
+    border: 1px solid #D4D7DC;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    margin-right: 15px;
+    background-color: gray;
+    color: white;
+}
+
+.user-setting.active .index-design {
+    background-color: white;
+    color: #58A9FA;
+    border: 1px solid white;
+}
